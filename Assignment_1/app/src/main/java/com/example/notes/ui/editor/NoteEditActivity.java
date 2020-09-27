@@ -1,10 +1,12 @@
-package com.example.asg_1notes;
+package com.example.notes.ui.editor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.notes.R;
+
+public class NoteEditActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -5,8 +5,8 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.asg_1notes"
-        minSdkVersion 17
+        applicationId "com.example.notes"
+        minSdkVersion 25
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"

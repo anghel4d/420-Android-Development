@@ -1,4 +1,4 @@
-package com.example.asg_1notes;
+package com.example.notes;
 
 import org.junit.Test;
 
