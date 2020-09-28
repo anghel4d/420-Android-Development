@@ -9,7 +9,7 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import ca.qc.johnabbott.cs616.notes.R;
+import com.example.notes.R;
 
 
 /**

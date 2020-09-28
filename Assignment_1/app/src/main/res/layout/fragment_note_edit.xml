@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.editor.NoteEditFragment" >
+
+    <EditText
+        android:id="@+id/title_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:text="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/body_EditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="clip_horizontal"
+        android:inputType="textPersonName"
+        android:text="Body"
+        app:layout_constraintBottom_toTopOf="@+id/properties_linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_TextView" />
+
+    <LinearLayout
+        android:id="@+id/properties_linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#3A3737"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/reminder_TextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:text="Add a reminder"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/colors_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <com.example.notes.ui.util.CircleView
+                android:id="@+id/pink_CircleView"
+                android:layout_width="421dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:circleColor="#F92672 " />
+
+            <com.example.notes.ui.util.CircleView
+                android:id="@+id/orange_CircleView"
+                android:layout_width="421dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:circleColor="#FD971F" />
+
+            <com.example.notes.ui.util.CircleView
+                android:id="@+id/beige_CircleView"
+                android:layout_width="421dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:circleColor="#F4BF75 " />
+
+            <com.example.notes.ui.util.CircleView
+                android:id="@+id/green_CircleView"
+                android:layout_width="421dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:circleColor="#A6E22E" />
+
+            <com.example.notes.ui.util.CircleView
+                android:id="@+id/cyan_CircleView"
+                android:layout_width="421dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:circleColor="#A1EFE4" />
+
+            <com.example.notes.ui.util.CircleView
+                android:id="@+id/blue_CircleView"
+                android:layout_width="421dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:circleColor="#66D9EF" />
+
+            <com.example.notes.ui.util.CircleView
+                android:id="@+id/purple_CircleView"
+                android:layout_width="421dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:circleColor="#AE81FF" />
+
+            <com.example.notes.ui.util.CircleView
+                android:id="@+id/brown_CircleView"
+                android:layout_width="421dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:circleColor="#CC6633 " />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Switch
+                android:id="@+id/lmao_Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switch"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/undo_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_revert"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

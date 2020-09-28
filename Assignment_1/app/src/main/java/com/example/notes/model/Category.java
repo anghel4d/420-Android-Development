@@ -1,6 +1,6 @@
 package com.example.notes.model;
 
-import ca.qc.johnabbott.cs616.notes.R;
+import com.example.notes.R;
 
 /**
  * Enumeration of note categories, represented as colors.
