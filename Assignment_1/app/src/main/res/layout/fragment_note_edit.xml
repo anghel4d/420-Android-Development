@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="date"
+            android:inputType="datetime"
             android:text="Add a reminder"
             android:textColor="#FFFFFF" />
 
@@ -137,6 +137,7 @@
                 android:id="@+id/undo_Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/undo_button"
                 android:src="@android:drawable/ic_menu_revert"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
