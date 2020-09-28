@@ -8,7 +8,7 @@
     tools:context=".ui.editor.NoteEditFragment" >
 
     <EditText
-        android:id="@+id/title_TextView"
+        android:id="@+id/title_EditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -34,7 +34,7 @@
         app:layout_constraintBottom_toTopOf="@+id/properties_linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_TextView" />
+        app:layout_constraintTop_toBottomOf="@+id/title_EditText" />
 
     <LinearLayout
         android:id="@+id/properties_linearLayout"
@@ -47,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/reminder_TextDate"
+            android:id="@+id/reminder_EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -63,7 +63,7 @@
             android:orientation="horizontal">
 
             <com.example.notes.ui.util.CircleView
-                android:id="@+id/pink_CircleView"
+                android:id="@+id/red_CircleView"
                 android:layout_width="421dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -77,7 +77,7 @@
                 app:circleColor="#FD971F" />
 
             <com.example.notes.ui.util.CircleView
-                android:id="@+id/beige_CircleView"
+                android:id="@+id/yellow_CircleView"
                 android:layout_width="421dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -91,14 +91,14 @@
                 app:circleColor="#A6E22E" />
 
             <com.example.notes.ui.util.CircleView
-                android:id="@+id/cyan_CircleView"
+                android:id="@+id/lightBlue_CircleView"
                 android:layout_width="421dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:circleColor="#A1EFE4" />
 
             <com.example.notes.ui.util.CircleView
-                android:id="@+id/blue_CircleView"
+                android:id="@+id/darkBlue_CircleView"
                 android:layout_width="421dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
