@@ -4,18 +4,26 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+
+import android.text.TextWatcher;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.notes.R;
+import com.example.notes.model.Category;
+import com.example.notes.model.Note;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link NoteEditFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class NoteEditFragment extends Fragment {
+public class NoteEditFragment extends Fragment implements View.OnClickListener{
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -51,5 +59,10 @@ public class NoteEditFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_note_edit, container, true);
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 }

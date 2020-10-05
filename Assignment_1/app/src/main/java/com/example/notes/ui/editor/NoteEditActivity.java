@@ -1,22 +1,18 @@
 package com.example.notes.ui.editor;
-
 import java.util.Stack;
-
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.notes.R;
 import com.example.notes.model.Category;
 import com.example.notes.model.Note;
 
 
-public class NoteEditActivity extends AppCompatActivity {
+public class NoteEditActivity extends AppCompatActivity implements View.OnClickListener {
 
     // Fields
     Stack<Note> history;
@@ -57,6 +53,15 @@ public class NoteEditActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        /*
+        switch (id) {
+            case
+        }
+        */
+    }
     private class NoteTextWatcher implements TextWatcher {
 
         @Override
