@@ -1,4 +1,5 @@
 package com.example.notes.ui.list;
+import com.example.notes.R;
 
 import android.os.Bundle;
 
