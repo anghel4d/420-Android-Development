@@ -1,5 +1,7 @@
 package com.example.notes.model;
 
+import com.example.notes.sqlite.Identifiable;
+
 import java.util.Date;
 import java.util.Objects;
 
@@ -7,7 +9,7 @@ import java.util.Objects;
  * Represent a single notes in the "Notes" app.
  * @author Ian Clement (ian.clement@johnabbott.qc.ca)
  */
-public class Note {
+public class Note implements Identifiable<Long> {
 
     // basic notes elements
     private long id;
